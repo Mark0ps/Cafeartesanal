@@ -1,0 +1,323 @@
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-size: 1rem;
+    background-image: url(https://caffeumbria.com/cdn/shop/t/32/assets/BG-Pattern.png?v=79606308121002850431649876776);
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(92, 44, 92);
+    color:black;
+    align-items: center;
+    padding: 1rem 0.5 rem;
+    border-bottom: groove;
+    border-radius: 8px;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    order: 0;
+}
+
+header h1{
+    margin:0px;
+    padding:0px 1rem;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Major Mono Display", monospace;
+    font-optical-sizing: auto;
+    color: #d9d2e0;
+    text-shadow: 2px 2px 0px  #957dad;
+    order: 1;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    order: 2;
+    width: 100%;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    font-size: 25px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color : #eee;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        padding: 0.5rem 1rem;
+    }
+    header h1 {
+        text-align: initial;
+    }
+    header nav {
+        justify-content: flex-end;
+        order: 2;
+        width: initial;
+    }
+    header nav ul {
+        flex-direction: row;
+    }
+    header nav ul li a {
+        text-align: initial;
+        width: initial;
+    }
+}
+
+footer {
+    background-color: rgb(163, 58, 68);
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 8px;
+    
+}
+
+footer ol, footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer li a {
+    display: block;
+    padding: 0.5rem 1 rem;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+@media (min-width: 1024px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+main {
+    padding: 1rem;
+    
+
+}
+
+
+#sobrenosotros {
+    background-image: url(https://www.pjscoffee.com/assets/images/bg-victorian.jpg);
+
+    background-size:cover;
+    padding: 0.5rem;
+    font-family:"Bebas Neue", sans-serif;
+    font-size: 20px;
+    filter: brightness(75%);
+    border-radius: 8px;
+}
+
+#sobrenosotros h2{
+    display: flex;
+    color: #fffdfd;
+}
+
+#sobrenosotros img{
+    width: 550px;;
+    height: auto;
+    border-radius: 0.5rem;
+    border-width: 0rem;
+    border-color: #6f407a;
+
+}
+
+#sobrenosotros section {
+    overflow-x: auto;
+}
+
+#sobrenosotros h2{
+    color: #282696;
+    font-size:30px;
+    font-family:"Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0%;
+
+}
+
+
+#proyectos>section h3{
+    font-size: 70px;   
+    margin: 0.5rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-style: oblique;
+    padding-top: 2.5rem;
+}
+
+
+#proyectos>section{
+    color: #282696;
+    font-size: 20px;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+#proyectos>section section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+
+}
+
+#proyectos>section:nth-child(2n){
+    background-color: #6f407a;
+    background-image: url(https://www.pjscoffee.com/assets/images/bg-brick.jpg);
+    border-radius: 8px;
+    margin: 0%;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+.card-container{
+    padding: 1rem;
+}
+
+
+.card-content{
+    padding: 0.5rem;
+}
+
+.card{
+    width: 300px;
+    background-color: #a7b3d4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgb(0,0,0,0.2);
+    margin: 20px;
+    
+
+}
+
+.card img{
+    width: 65%;
+    height: auto;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce; 
+    animation-duration: 2s; 
+    justify-content: center;
+    object-fit: cover;
+}
+
+.card-content h4{
+    padding: 1rem;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 8px;
+    
+}
+
+.card-content p{
+    color: #f7f7fc;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card2{
+    width: 300px;
+    background-color: #a7b3d4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgb(0,0,0,0.2);
+    margin: 0.5rem 0.75rem;
+    
+
+}
+
+.card2 img{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    animation: bounce; 
+    animation-duration: 2s; 
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#contactame {
+    padding:1rem;
+    text-align: center;
+}
+
+#contactame form{
+    margin: 0rem auto;
+    box-shadow: 3px 3px 5px #000;
+    padding:1rem;
+    max-width: 920px;
+    text-align:initial;
+}
+#contactame form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#contactame form input,
+#contactame form textarea {
+    display: block;
+    min-width:180px;
+    font-size: 1rem;
+    padding:0.25rem 0.5rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-top:0.25rem;
+}
+
+table tr{
+    border-bottom: 1px solid #000;
+}
+table td, table th {
+    padding:0.25rem 0.5rem;
+}
+table tr:nth-child(2n){
+    background-color: #bbb;
+}
+table thead, table tfoot{
+    background-color: #000;
+    color:#eee;
+}
